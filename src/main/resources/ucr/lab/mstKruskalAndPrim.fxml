@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="ucr.lab.MstKruskalAndPrim"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="424.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MSTKruskalAndPrimController">
+   <children>
+      <Pane layoutY="-5.0" prefHeight="430.0" prefWidth="632.0" style="-fx-background-color: #a5b090;">
+         <children>
+            <Pane layoutX="-3.0" layoutY="6.0" prefHeight="87.0" prefWidth="640.0" style="-fx-background-color: #f0afab;">
+               <children>
+                  <Label layoutX="62.0" layoutY="14.0" prefHeight="64.0" prefWidth="476.0" text="Minimum Spanning Tree (Kruskal And Prim)">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Button fx:id="btn_MST" layoutX="238.0" layoutY="93.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="156.0" text="Randomize" />
+            <Label layoutX="14.0" layoutY="106.0" text="Graph Type" textFill="#c30d0d">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="496.0" layoutY="106.0" text="MST Algorithm" textFill="#c30d0d">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rbtn_Matrix" layoutX="11.0" layoutY="127.0" mnemonicParsing="false" text="Adjacency Matrix" />
+            <RadioButton fx:id="rbtn_List" layoutX="11.0" layoutY="153.0" mnemonicParsing="false" text="Adjacency List" />
+            <RadioButton fx:id="rbtn_LinkedList" layoutX="11.0" layoutY="178.0" mnemonicParsing="false" text="Linked List" />
+            <RadioButton fx:id="rbtn_Kruskal" layoutX="496.0" layoutY="127.0" mnemonicParsing="false" text="Kruskal" />
+            <RadioButton fx:id="rbtn_Prim" layoutX="496.0" layoutY="153.0" mnemonicParsing="false" text="Prim" />
+         </children>
+      </Pane>
+   </children>
 </AnchorPane>

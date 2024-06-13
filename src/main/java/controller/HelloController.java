@@ -40,7 +40,7 @@ public class HelloController {
 
     @FXML
     void directedGraphOnAction(ActionEvent event) {
-        loadPage("ucr/lab/directedGraph.fxml");
+        loadPage("directedGraph.fxml");
     }
 
     @FXML
