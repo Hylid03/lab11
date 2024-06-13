@@ -235,7 +235,7 @@ public class SinglyLinkedList implements List{
         String result = "";
         Node aux = first;
         while(aux!=null){
-            result+= "\n"+STR."\{aux.data}";
+            result+= "\n"+aux.data;
             aux = aux.next;
         }
         return result;

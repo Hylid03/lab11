@@ -249,9 +249,9 @@ public class CircularDoublyLinkedList implements List{
         String result = "Circular Doubly Linked List Content\n\n";
         Node aux = first;
         while(aux!=last){
-            result+= STR."\{aux.data}, ";
+            result+= "{aux.data}, ";
             aux = aux.next;
         }
-        return STR."\{result}\n\{aux.data}"; //agrego la data del ult nodo
+        return "{result}\n{aux.data}"; //agrego la data del ult nodo
     }
 }
