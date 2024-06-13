@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="647.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DirectedGraphController">
+   <children>
+      <Pane prefHeight="647.0" prefWidth="877.0" style="-fx-background-color: #d83018;">
+         <children>
+            <Pane layoutX="-6.0" layoutY="-2.0" prefHeight="96.0" prefWidth="888.0" style="-fx-background-color: #4c3d31;">
+               <children>
+                  <Label layoutX="93.0" layoutY="18.0" prefHeight="58.0" prefWidth="648.0" text="Singly Linked List Graph Operations" textFill="#eeeded">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button layoutX="18.0" layoutY="106.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="255.0" text="Randomize" />
+            <Button layoutX="561.0" layoutY="106.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="266.0" text="Add Edges&amp;Weights" />
+            <Button layoutX="286.0" layoutY="106.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="266.0" text="Add Vertex" />
+            <Button layoutX="18.0" layoutY="187.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="255.0" text="Remove Vertex" />
+            <Button layoutX="283.0" layoutY="187.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="266.0" text="Remove Edges&amp;Weights" />
+            <Button layoutX="567.0" layoutY="187.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="255.0" text="Clear" />
+            <TextArea fx:id="txA_SLLGO" layoutX="14.0" layoutY="253.0" prefHeight="377.0" prefWidth="379.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
