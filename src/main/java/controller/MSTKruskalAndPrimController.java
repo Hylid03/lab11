@@ -1,5 +1,6 @@
 package controller;
 
+import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
 
@@ -10,4 +11,8 @@ public class MSTKruskalAndPrimController {
     public RadioButton rbtn_LinkedList;
     public RadioButton rbtn_Kruskal;
     public RadioButton rbtn_Prim;
+
+    public void randomizeOnAction(ActionEvent actionEvent){
+
+    }
 }

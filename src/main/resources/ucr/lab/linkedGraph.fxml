@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-    <AnchorPane prefHeight="562.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DirectedGraphController">
+<AnchorPane prefHeight="562.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LinkedGraphController">
     <children>
         <Pane prefHeight="562.0" prefWidth="602.0" style="-fx-background-color: #e8ff65;">
             <children>
@@ -17,12 +17,12 @@
                         </Label>
                     </children>
                 </Pane>
-                <Button layoutX="218.0" layoutY="101.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="177.0" text="Contains Vertex" />
-                <Button layoutX="416.0" layoutY="101.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="177.0" text="DFS Tour" />
-                <Button layoutX="14.0" layoutY="101.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="177.0" text="Randomize" />
-                <Button layoutX="14.0" layoutY="175.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="177.0" text="Contains Edge" />
-                <Button layoutX="218.0" layoutY="175.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="177.0" text="To String" />
-                <Button layoutX="416.0" layoutY="175.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="177.0" text="BFS Tour" />
+                <Button layoutX="218.0" layoutY="101.0" mnemonicParsing="false" onAction="#containsVertexOnAction" prefHeight="49.0" prefWidth="177.0" text="Contains Vertex" />
+                <Button layoutX="416.0" layoutY="101.0" mnemonicParsing="false" onAction="#dfsTourOnAction" prefHeight="49.0" prefWidth="177.0" text="DFS Tour" />
+                <Button layoutX="14.0" layoutY="101.0" mnemonicParsing="false" onAction="#randomizeOnAction" prefHeight="49.0" prefWidth="177.0" text="Randomize" />
+                <Button layoutX="14.0" layoutY="175.0" mnemonicParsing="false" onAction="#containsEdgeOnAction" prefHeight="49.0" prefWidth="177.0" text="Contains Edge" />
+                <Button layoutX="218.0" layoutY="175.0" mnemonicParsing="false" onAction="#toStringOnAction" prefHeight="49.0" prefWidth="177.0" text="To String" />
+                <Button layoutX="416.0" layoutY="175.0" mnemonicParsing="false" onAction="#bfsTourOnAction" prefHeight="49.0" prefWidth="177.0" text="BFS Tour" />
                 <Label fx:id="lbl_LinkedEdge" layoutX="75.0" layoutY="237.0" prefHeight="17.0" prefWidth="436.0" text="Label" textFill="#dd0505" visible="false" />
                 <TextArea fx:id="txA_SLLG" layoutX="14.0" layoutY="271.0" prefHeight="275.0" prefWidth="278.0" />
             </children>
