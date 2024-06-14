@@ -20,19 +20,24 @@ class SinglyLinkedListGraphTest {
             graph.addVertex('F');
             graph.addVertex('G');
             graph.addVertex('H');
+            graph.addVertex('I');
+            graph.addVertex('J');
 
-            graph.addEdgeWeight('A', 'B', 20);
-            graph.addEdgeWeight('A', 'E', 15);
-            graph.addEdgeWeight('B', 'C', 10);
-            graph.addEdgeWeight('E', 'F', 30);
-            graph.addEdgeWeight('C', 'D', 40);
-            graph.addEdgeWeight('F', 'G', 5);
-            graph.addEdgeWeight('G', 'H', 7);
+            graph.addEdgeWeight('A', 'B', "Cris");
+            graph.addEdgeWeight('A', 'C', "Gill");
+            graph.addEdgeWeight('A', 'D', "Bella");
+            graph.addEdgeWeight('B', 'F', "Jay");
+            graph.addEdgeWeight('F', 'E', "Camila");
+            graph.addEdgeWeight('F', 'J', "Juan");
+            graph.addEdgeWeight('C', 'G', "Sevika");
+            graph.addEdgeWeight('G', 'J', "Tao");
+            graph.addEdgeWeight('D', 'H', "Mich");
+            graph.addEdgeWeight('H', 'I', "Millo");
+            graph.addEdgeWeight('H', 'J', "Lui");
 
-            //lanza una excepción
-            //graph.addEdgeWeight('G', 'K', 7);
+            System.out.println(graph);
 
-            System.out.println(graph.toString());
+
 
             //Busqueda en Profundidad
             System.out.println("\nRECORRIDO CON EL ALGORITMO DFS (DEPTH FIRST SEARCH): "
@@ -41,6 +46,24 @@ class SinglyLinkedListGraphTest {
             //Busqueda en Amplitud
             System.out.println("\nRECORRIDO CON EL ALGORITMO BFS (BREADTH FIRST SEARCH): "
                     +"\n"+graph.bfs());
+
+            graph.removeEdge('B','F');
+            graph.removeEdge('F','E');
+            graph.removeEdge('F','J');
+            graph.removeEdge('H','I');
+            graph.removeEdge('H','J');
+            graph.removeEdge('B','F');
+
+            graph.removeVertex('F');
+            graph.removeVertex('H');
+            graph.removeVertex('J');
+
+            System.out.println("\nRECORRIDO CON EL ALGORITMO DFS (DEPTH FIRST SEARCH): "
+                    +"\n"+graph.dfs());
+            //Busqueda en Amplitud
+            System.out.println("\nRECORRIDO CON EL ALGORITMO BFS (BREADTH FIRST SEARCH): "
+                    +"\n"+graph.bfs());
+            System.out.println(graph);
 
         } catch (GraphException | ListException | StackException | QueueException e) {
             throw new RuntimeException(e);

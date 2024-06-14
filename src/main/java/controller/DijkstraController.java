@@ -1,5 +1,7 @@
 package controller;
 
+import domain.SinglyLinkedListGraph;
+import domain.list.SinglyLinkedList;
 import javafx.fxml.FXML;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TableView;
@@ -38,21 +40,24 @@ public class DijkstraController {
         updateTableView(shortestDistances);
     }
 
-    private List<List<Integer>> generateRandomAdjacencyMatrixGraph() {
-        List<List<Integer>> graph = new ArrayList<>();
+    private List<List<Integer>> generateRandomLinkedListGraph() {
+
+    }
+
+    public SinglyLinkedList generateRandomAdjacencyMatrixGraph() {
+        SinglyLinkedList graph = new SinglyLinkedList();
         for (int i = 0; i < 100; i++) {
-            List<Integer> row = new ArrayList<>();
+            SinglyLinkedList row = new SinglyLinkedList();
             for (int j = 0; j < 100; j++) {
                 if (i == j) {
-                    row.add(0);
+                    row.add(0); // No self-loops
                 } else {
-                    row.add(util.Utility.getRandom(800));
+                    row.add(util.Utility.getRandom(800)); // Random weight between 0 and 799
                 }
             }
             graph.add(row);
         }
         return graph;
-    }
 
     private List<Integer> dijkstra(List<List<Integer>> graph) {
         // Implementa el algoritmo de Dijkstra aquí
