@@ -40,11 +40,7 @@ public class DijkstraController {
         updateTableView(shortestDistances);
     }
 
-    private List<List<Integer>> generateRandomLinkedListGraph() {
-
-    }
-
-    public SinglyLinkedList generateRandomAdjacencyMatrixGraph() {
+    private SinglyLinkedList generateRandomLinkedListGraph() {
         SinglyLinkedList graph = new SinglyLinkedList();
         for (int i = 0; i < 100; i++) {
             SinglyLinkedList row = new SinglyLinkedList();
@@ -58,6 +54,10 @@ public class DijkstraController {
             graph.add(row);
         }
         return graph;
+    }
+
+    public  generateRandomAdjacencyMatrixGraph() {
+
 
     private List<Integer> dijkstra(List<List<Integer>> graph) {
         // Implementa el algoritmo de Dijkstra aquí
